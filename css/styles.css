@@ -1,0 +1,103 @@
+@charset 'utf-8';
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#principal {
+    background-color :#72265c;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+#topo {
+    background-color: rgb(241, 192, 30);;
+    width: 100%;
+    height: 30%;
+    color: orangered;
+    display: flex; /*flexbox no pai, para que os filhos se ajustem*/
+    justify-content: flex-end; /*alinha horizontamente*/
+    align-items: flex-end; /*alinha verticalmente*/
+}
+
+#topo div {
+    background-color: #0b8f7d;
+    height: 20%;
+    width: 60%;
+    border-top-left-radius: 10em;
+}
+
+li{
+	display: inline;
+    padding: 50px;
+    font-weight: bold;
+    font-size: 3vh;
+    text-shadow: 3px 3px 7px black;
+    line-height: 37.61px;
+}
+
+#corpo {
+    background-color: #b3f53a;
+    height: 60%;
+    width: 100%;
+    display: flex;
+}
+
+#esquerdo {
+    background-color: #0b8f7d;
+    height: 100%;
+    width: 25%;
+    display: flex; /*flexbox no pai, para que os filhos se ajustem*/
+    flex-direction: column; /* usando ele o justify e o align trocam de funções */
+    flex-wrap: wrap;
+    justify-content: space-around ; /*alinha horizontamente*/
+    align-items: center; /*alinha verticalmente*/
+}
+
+#esquerdo div {
+    background-color: #fc9e23;
+    width: 70%;
+    height: 10%;
+}
+
+#centro {
+    background-color: #ac18d1;
+    height: 100%;
+    width: 50%;
+    display: flex; /*flexbox no pai, para que os filhos se ajustem*/
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around; /*alinha horizontamente*/
+    align-items: center; /*alinha verticalmente*/
+}
+
+#centro div {
+    background-color:  #fc9e23;
+    width: 19%;
+    height: 18%;
+}
+
+#direito {
+    background-color: rgb(11, 143, 125);
+    height: 100%;
+    width: 25%;
+    display: flex; /*flexbox no pai, para que os filhos se ajustem*/
+    flex-direction: column;
+    flex-wrap: wrap; /*alinha proporcionalmente"*/
+    justify-content: space-around; /*alinha horizontamente*/
+    align-items: center; /*alinha verticalmente*/
+}
+
+#direito div {
+    background-color:  #fc9e23;
+    width: 60%;
+    height: 30%;
+}
+
+#rodape {
+    background-color: gray;
+    height: 10%;
+    width: 100%;
+}
